@@ -4,6 +4,7 @@ import requests
 #크롤링
 from bs4 import BeautifulSoup
 
+
 url = "https://www.daangn.com/fleamarket/"
 response = requests.get(url)
 
@@ -26,6 +27,8 @@ for post in posts:
     f.write(f"{title}, {price}, {addr}\n")
 
 f.close() 
+
+
 #  <div class="card-desc">
 #       <h2 class="card-title">맥북 m1 프로 pro 13인치 램8gb / 512gb [96%]</h2>
 #       <div class="card-price ">
